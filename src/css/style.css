@@ -11,6 +11,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: #333;
+  background-color: #eee;
 }
 
 /* makes sizing simpler */
@@ -32,7 +35,6 @@
 /* improves punctuation in supported browsers */
 html {
   font-size: 62.5%; /* 1rem = 10px */
-  color-scheme: dark light;
   hanging-punctuation: first last;
 }
 
