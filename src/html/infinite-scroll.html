@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/infinite-scroll.css" />
+    <title>Infinite scroll</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="quote-generator.html">Quote Generator</a></li>
+        <li><a href="infinite-scroll.html">Infinite scroll</a></li>
+      </ul>
+    </nav>
+    <div id="app-infinite-scroll">
+      <h1 class="heading-1">Infinite scroll - unsplash api</h1>
+
+      <div class="loader" id="loader" hidden>
+        <img src="/svg/loader.svg" alt="loader" />
+      </div>
+
+      <div class="image-container" id="image-container"></div>
+    </div>
+    <script type="module" src="/src/js/infinite-scroll.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
