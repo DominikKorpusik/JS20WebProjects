@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="../css/joke-teller.css" />
-    <title>Title</title>
+    <title>Joke teller</title>
   </head>
   <body>
     <nav>
@@ -13,11 +13,14 @@
         <li><a href="../../index.html">Home</a></li>
       </ul>
     </nav>
-    <div id="app-dd">
-      <h1 class="heading-1">Title</h1>
+    <div id="app-joke">
+      <button id="btn">Tell Me A Joke</button>
+      <div id="joke-text"></div>
+      <audio src="" id="audio" controls hidden></audio>
     </div>
 
-    <script type="module" src="/src/js/joke-teller.js"></script>
+    <script src="/src/js/voice.js"></script>
+    <script src="/src/js/joke-teller.js"></script>
     <script type="module" src="/main.js"></script>
   </body>
 </html>

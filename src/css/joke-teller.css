@@ -1,0 +1,71 @@
+body {
+  background: #45badd;
+}
+
+#app-joke {
+  height: 90vh;
+  width: 100vw;
+
+  background: url(/public/robot.gif);
+  background-size: contain;
+  background-position: left center;
+  background-repeat: no-repeat;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#joke-text {
+  font-size: 2rem;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#btn {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 50px;
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ff3482;
+}
+
+#btn:hover {
+  filter: brightness(95%);
+}
+
+#btn:active {
+  transform: scale(0.98) translateX(-50%);
+}
+
+#btn:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
+@media screen and (max-width: 1000px) {
+  #app-joke {
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #btn {
+    box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  #joke-text {
+    font-size: 1.2rem;
+  }
+}
