@@ -9,9 +9,12 @@
   --on-background-alt: rgba(66, 66, 66, 0.7);
   --background: rgb(255, 255, 255);
   --box-shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+
+  --nav-bg: rgb(255 255 255 / 50%);
+  --text-box-bg: rgb(0 0 0 / 50%);
 }
 
-[data-theme="dark"] {
+[data-theme="true"] {
   --primary-color: rgb(150, 65, 255);
   --primary-variant: #6c63ff;
   --secondary-color: #03dac5;
@@ -19,6 +22,9 @@
   --on-background: rgba(255, 255, 255, 0.9);
   --on-background-alt: rgba(255, 255, 255, 0.7);
   --background: #121212;
+
+  --nav-bg: rgb(0 0 0 / 50%);
+  --text-box-bg: rgb(255 255 255 / 50%);
 }
 
 html {
@@ -63,10 +69,10 @@ section {
   letter-spacing: 3px;
   padding: 25px;
   width: 100vw;
-  background: rgb(255 255 255 / 50%);
+  background: var(--nav-bg);
 }
 
-a {
+.a {
   margin-right: 25px;
   color: var(--primary-color);
   text-decoration: none;
@@ -74,8 +80,8 @@ a {
   font-weight: bold;
 }
 
-a:hover,
-a:focus {
+.a:hover,
+.a:focus {
   color: var(--on-background);
   border-bottom: 3px solid;
 }
@@ -164,6 +170,7 @@ a:focus {
   color: var(--on-primary);
   border-radius: 10px;
   padding: 30px;
+  background: var(--text-box-bg);
 }
 
 .p {
@@ -190,7 +197,7 @@ a:focus {
   z-index: 100;
   position: fixed;
   right: 25px;
-  top: 30px;
+  top: 100px;
 }
 
 .theme-switch-wrapper span {
