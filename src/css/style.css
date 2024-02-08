@@ -73,6 +73,7 @@ li {
 
 nav {
   margin: 0 auto;
+  max-width: 100%;
 
   display: flex;
   flex: 1;
@@ -82,12 +83,10 @@ nav {
   padding: 1rem;
 
   background-color: #fff;
-  border-radius: 20px;
 }
 
 nav ul {
   display: flex;
-
   list-style: none;
 }
 
