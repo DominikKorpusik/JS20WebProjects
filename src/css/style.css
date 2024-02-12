@@ -72,21 +72,13 @@ li {
 }
 
 nav {
-  margin: 0 auto;
-  max-width: 100%;
-
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
   padding: 1rem;
-
   background-color: #fff;
 }
 
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -95,7 +87,7 @@ nav a {
   font-weight: 700;
   font-size: 2rem;
   text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 0rem 2rem;
 }
 
 nav a:hover {
